@@ -1,16 +1,19 @@
 import React from "react"
 
 
-
+import Info from "../components/Info";
+import Time from "../components/Time";
+import Title from "../components/Title";
+import Image from "../components/Image";
 
 const Card = props => {
 
     return(
         <div className="Main">
-            <h2>{props.title}</h2>
-            <img src={props.photo} alt="" />
-            <p>{props.info}</p>
-            <h3>{props.time}</h3>
+            <Title title={props.title} />
+            <Image photo={props.photo} />
+            <Info info={props.info} />
+            <Time time={props.time} />
 
         </div>
     )

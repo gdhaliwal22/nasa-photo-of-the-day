@@ -2,6 +2,8 @@ import React, { useState, useEffect }from "react";
 import axios from "axios";
 import PodCard from "./PodCard";
 
+
+
 const CreateData = () => {
 
 const [title, setTitle] = useState();
@@ -18,6 +20,7 @@ useEffect(() => {
         setPhoto(response.data.url);
         setExplanation(response.data.explanation);
         setDate(response.data.date);
+        console.log(response)
     });
 },[]);
 
