@@ -1,4 +1,6 @@
 import React from "react";
+
+import PodList from "./components/PodList";
 import "./App.css";
 
 function App() {
@@ -6,8 +8,9 @@ function App() {
     <div className="App">
       <p>
         Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
+        app! Have fun !
       </p>
+      <PodList />
     </div>
   );
 }
