@@ -6,6 +6,7 @@ const BlogText = styled.p`
     line-height: 1.5;
     margin: 40px;
     text-align: left;
+    font-weight: bold;
 `;
 
 const Info = props => {
